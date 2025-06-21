@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Navitems from './Navitems'
 import {
   SignInButton,
-  
+  SignOutButton,
   SignedIn,
   SignedOut,
   UserButton,
@@ -33,7 +33,15 @@ const Navbar = () => {
            
            </SignedOut>
            <SignedIn>
-            <UserButton/>
+            <div className="flex items-center gap-4">
+              <UserButton/>
+              <SignOutButton>
+                <button className="btn-signin">
+                  <Image src="/icons/logout.svg" alt="logout" width={16} height={16} />
+                  Sign Out
+                </button>
+              </SignOutButton>
+            </div>
            </SignedIn>
 
         </div>
