@@ -33,6 +33,9 @@ export default function RootLayout({
           <ClerkProvider appearance={{variables:{colorPrimary:"#fe5933"}}}>
             <Navbar/>
             {children}
+            <footer className="text-center py-4 text-gray-600 text-sm">
+              Made with ❤️ by Sachin Jha
+            </footer>
           </ClerkProvider>
         </body>
       </html>
